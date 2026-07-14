@@ -1,0 +1,42 @@
+
+.class { behavior:url(js/PIE.htc); position:absolute;}
+
+body {
+	min-width: 1170px;
+}
+
+
+#toTop:hover i{
+	color: #000;
+}
+
+.video-row .video-hover,
+.video_video .video-hover{
+	display: none;
+}
+.video-row li:hover .video-hover,
+.video_video:hover .video-hover{
+	display: block;
+}
+
+.header_bg{
+	filter: alpha(opacity=44);
+}
+.menu_bg{
+	filter: alpha(opacity=38);
+}
+.isStuck .menu_bg{
+	filter: alpha(opacity=00);
+}
+.menu-sep{
+	filter: alpha(opacity=46);	
+}
+.btn_slide{	
+	filter: alpha(opacity=00);
+}
+.btn:hover .btn_slide{	
+	filter: alpha(opacity=99);
+}
+.login-menu:after{
+	filter: alpha(opacity=65);
+}

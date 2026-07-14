@@ -1,0 +1,156 @@
+.owl {
+	overflow: hidden;
+	z-index: 1;
+	color: #fff;
+	position: relative;
+	margin-top: -15px;
+	padding: 40px 0px 0px;
+}
+
+.owl .owl-item {
+	float: left;
+	width: 100%;
+}
+
+.owl .item {
+	overflow: hidden;
+	position: relative;
+	padding-right: 1px;
+}
+
+
+.owl-wrapper-outer {
+	overflow: hidden;
+	padding-top: 0px;
+}
+
+.owl-wrapper {
+	overflow: hidden;
+}
+
+.owl .owl-prev, .owl .owl-next {
+	cursor: pointer;
+	position: absolute;
+	/*background: url(../img/prevnext.png) 0 0 no-repeat;*/
+	display: block;
+	height: 11px;
+	right: 17px;
+	top: 0;
+	width: 26px;
+	height: 26px;
+	overflow: hidden;
+	text-indent: -999px;
+
+}
+
+.owl .owl-next {
+	right: 0;
+	background-position: right 0;
+
+}
+
+.owl .owl-next:hover {
+	background-position: right bottom;
+}
+
+
+
+.owl .owl-prev:hover {
+	background-position: 0 bottom;
+}
+
+
+/* Owl content */
+
+
+
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	-webkit-perspective: 1000;
+}
+
+
+/*2nd*/
+.owl1 {
+	overflow: hidden;
+	z-index: 1;
+	position: relative;
+	padding: 57px 0px 0px;
+	margin: -31px -10px 0;
+}
+
+.owl1 .owl-item {
+	float: left;
+	width: 100%;
+}
+
+.owl1 .item {
+	color: #d5cec6;
+	padding: 0 10px;
+	position: relative;
+	text-align: left;
+}
+
+.owl1 .bord_img {
+	position: relative;
+	margin-bottom: 15px;
+
+}
+
+.owl1 .bord_img span {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border: 10px solid transparent;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+
+.owl1 a:hover .bord_img span {
+	border-color: #af8747;
+}
+
+.owl1 .owl-wrapper-outer {
+	overflow: hidden;
+}
+
+.owl1 .owl-wrapper {
+	overflow: visible;
+}
+
+
+.owl1 .owl-prev, .owl1 .owl-next {
+	cursor: pointer;
+	position: absolute;
+	background: url(../img/prevnext1.png) 0 0 no-repeat;
+	display: block;
+	height: 32px;
+	right: 42px;
+	top: 0;
+	width: 32px;
+	overflow: hidden;
+	text-indent: -999px;
+
+}
+
+.owl1 .owl-next {
+	right: 10px;
+	background-position: right 0;
+
+}
+
+.owl1 .owl-next:hover {
+	background-position: right bottom;
+}
+
+
+
+.owl1 .owl-prev:hover {
+	background-position: 0 bottom;
+}

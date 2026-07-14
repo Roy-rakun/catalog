@@ -1,0 +1,110 @@
+
+
+
+#owl {
+	z-index: 1;
+	position: relative;
+	padding: 107px 0 53px;
+	margin: 0 -10px;
+}
+
+
+.owl-item {
+	float: left;
+}
+
+#owl .item {
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	margin: 0 10px;
+}
+
+
+
+#owl .item span {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 5;
+	border: 3px solid transparent;
+	border-bottom-width: 4px;
+}
+
+#owl .item * {
+	position: relative;
+	z-index: 6;
+}
+
+#owl .item p {
+	margin-bottom: 0;
+	padding: 0 10px;
+}
+
+#owl .item:hover span {
+	border-color: #fff;
+}
+
+#owl .item img {
+	z-index: 4;
+	position: relative;
+}
+
+#owl .item h2 {
+	padding-top: 43px;
+	margin-bottom: 24px;
+}
+
+#owl .item .btn {
+	margin-bottom: 29px;
+}
+
+#owl .item:hover span{
+	border-color: #fff;
+}
+
+
+#owl .owl-wrapper-outer {
+	overflow: hidden;
+}
+
+#owl  .owl-controls {
+}
+
+
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+	-webkit-perspective: 1000;
+}
+
+#owl .owl-prev, #owl .owl-next {
+	cursor: pointer;
+	position: absolute;
+	background: url(../images/prevnext.png) 0 0 no-repeat;
+	display: block;
+	height: 7px;
+	width: 73px;
+	height: 33px;
+	bottom: 0;
+	left: 50%;
+	margin-left: -73px;
+	overflow: hidden;
+	text-indent: -999px;
+}
+
+#owl .owl-next {
+	margin-left: 0;
+	background-position: right bottom;
+}
+
+#owl .owl-next:hover {
+	background-position: right 0;
+}
+
+#owl .owl-prev:hover {
+	background-position: 0 bottom;
+}

@@ -1,0 +1,27 @@
+
+#search,
+.circle,
+.link,
+#toTop { behavior:url(js/PIE.htc); }
+
+.sf-menu>li+li:after {background: url(../images/ie_bullet.jpg) 0 0 no-repeat;}
+
+#contact-form .contact-form-loader { 
+  display: none;
+}
+
+#contact-form.processing .contact-form-loader {
+  display: block;
+}
+
+#toTop {
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+	border: 1px solid #a0a0a0;
+}
+
+.circle:hover {background: #0c6d68;}
+
+#toTop:hover {border: 1px solid #000;}
+

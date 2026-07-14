@@ -1,0 +1,296 @@
+/*----------------------------
+	Thumbnails
+-----------------------------*/
+
+.thumbs {
+	position: relative;
+	overflow: hidden;
+	text-align: left;
+	margin: 32px 0 -51px;
+}
+
+.capture {
+	position: relative;
+	overflow: hidden;
+	width: 252px;
+	padding: 0 23px;
+	height: 54px;
+	bottom: 54px;
+	background: url(../images/slide_bg.png) 0 0 repeat;
+}
+
+.capture a {
+	color: #fff;
+	line-height: 52px;
+}
+.capture a:hover {
+	color: #da3136;
+}
+
+.thumbs a.magnifier {
+	position:absolute;
+	top: 214px;
+	right: 0;
+	text-decoration:none;
+	z-index: 100;
+	background: url(../images/slide_bg.png) 0 0 repeat;
+	height: 54px;
+	width: 71px;
+	display: inline-block;
+	text-align: center;
+}
+
+.thumbs a.magnifier:hover  {
+	background: url(../images/red_bg.jpg) 0 0 repeat;
+	opacity: .7;
+	-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=70)';
+}
+
+.magnifier {
+    display: block;
+    
+    background-position:center center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+}
+
+.magnifier img {
+    display: block;
+    position: relative;
+    left: 23px;
+    top: 16px;
+
+	-webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -ms-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+.thumbs:hover .magnifier img {
+    opacity: 0.9;
+    -ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=90)';
+}
+
+/* The gallery overlay */
+
+#galleryOverlay{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	opacity:0;
+	z-index:100000;
+	background-color:#222;
+	background-color:rgba(0,0,0,0.8);
+	overflow:hidden;
+	display:none;
+	
+	-moz-transition:opacity 1s ease;
+	-webkit-transition:opacity 1s ease;
+	transition:opacity 1s ease;
+}
+
+/* This class will trigger the animation */
+
+#galleryOverlay.visible{
+	opacity:1;
+}
+
+#gallerySlider{
+	height:100%;
+	
+	left:0;
+	top:0;
+	
+	width:100%;
+	white-space: nowrap;
+	position:absolute;
+	
+	-moz-transition:left 0.4s ease;
+	-webkit-transition:left 0.4s ease;
+	transition:left 0.4s ease;
+}
+
+#gallerySlider .placeholder{
+	height: 100%;
+	line-height: 1px;
+	text-align: center;
+	width:100%;
+	display:inline-block;
+}
+
+/* The before element moves the
+ * image halfway from the top */
+
+#gallerySlider .placeholder:before{
+	content: "";
+	display: inline-block;
+	height: 50%;
+	width: 1px;
+	margin-right:-1px;
+}
+
+#gallerySlider .placeholder img{
+	display: inline-block;
+	max-height: 100%;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+#gallerySlider.rightSpring{
+	-moz-animation: rightSpring 0.3s;
+	-webkit-animation: rightSpring 0.3s;
+}
+
+#gallerySlider.leftSpring{
+	-moz-animation: leftSpring 0.3s;
+	-webkit-animation: leftSpring 0.3s;
+}
+
+/* Firefox Keyframe Animations */
+
+@-moz-keyframes rightSpring{
+	0%{		margin-left:0px;}
+	50%{	margin-left:-30px;}
+	100%{	margin-left:0px;}
+}
+
+@-moz-keyframes leftSpring{
+	0%{		margin-left:0px;}
+	50%{	margin-left:30px;}
+	100%{	margin-left:0px;}
+}
+
+/* Safari and Chrome Keyframe Animations */
+
+@-webkit-keyframes rightSpring{
+	0%{		margin-left:0px;}
+	50%{	margin-left:-30px;}
+	100%{	margin-left:0px;}
+}
+
+@-webkit-keyframes leftSpring{
+	0%{		margin-left:0px;}
+	50%{	margin-left:30px;}
+	100%{	margin-left:0px;}
+}
+
+/* Arrows */
+
+#prevArrow,#nextArrow{
+	border:none;
+	text-decoration:none;
+	background:url('../images/arrows.png') no-repeat;
+	opacity:0.5;
+	cursor:pointer;
+	position:absolute;
+	width:43px;
+	height:58px;
+	
+	top:50%;
+	margin-top:-29px;
+	
+	-moz-transition:opacity 0.2s ease;
+	-webkit-transition:opacity 0.2s ease;
+	transition:opacity 0.2s ease;
+}
+
+#prevArrow:hover, #nextArrow:hover{
+	opacity:1;
+}
+
+#prevArrow{
+	background-position:left top;
+	left:40px;
+}
+
+#nextArrow{
+	background-position:right top;
+	right:40px;
+}
+
+
+/*----------------------------
+	Media Queries
+-----------------------------*/
+
+
+@media screen and (max-width: 1199px) {
+
+	.thumbs {margin: 32px 0 -13px;}
+		
+	.img > img {
+	    width: 100%;
+	}
+	.img {overflow: hidden;}
+	
+	
+	.thumbs a.magnifier {
+	    height: 48px;
+	    text-align: center;
+	    top: 218px;
+	    width: 100%;
+	}
+	
+	.capture {
+	    bottom: 48px;
+	    height: 48px;
+	    padding: 0 2%;
+	    text-align: center;
+	    width: 96%;
+	}
+	
+	.capture a {line-height: 48px;}
+	
+	.magnifier img {
+	    left: 7px;
+	    top: 13px;
+	    display: inline-block;
+	}
+}
+
+@media screen and (max-width: 979px) {
+	
+	.thumbs a.magnifier	{top: 172px;}
+	.capture {
+    	padding: 0 2.5%;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	
+	.thumbs {margin: 10px 0 0;}
+
+	.thumbs a.magnifier {
+   		height: 47px;
+   		top: 257px;
+   		width: 19.6%;
+	}
+
+	.capture {
+    	bottom: 0;
+    	height: 48px;
+    	padding: 0 5%;
+    	width: 70%;
+    	position: absolute;
+    	text-align: left;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	.thumbs {margin: 0;}
+	.capture {height: 41px;}
+	.capture a {line-height: 13px;}
+	.capture p {padding: 3px 0; }
+
+	.magnifier img {left: 2px;top: 9px;}
+	.thumbs a.magnifier {top: auto; bottom: -6px;}
+
+}

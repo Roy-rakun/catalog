@@ -1,0 +1,84 @@
+:focus { outline:none; } 
+
+/****accordion****/
+#accordion {
+	padding: 0;
+	margin-top: 23px;
+	/*border: 1px solid #e6e6e6;*/
+}
+#accordion>ul>li:first-child>a {
+	margin-top: 0;
+}
+#accordion>ul>li {
+	padding-bottom: 14px;
+	border: 1px solid #282827;
+}
+#accordion h5 a {
+	border: 1px solid #282827;
+	margin: 0px 0px 3px 0px;
+	background: none;
+	text-transform: uppercase;
+	color: #282827;
+	font:bold 15px/20px "Asap", Arial, sans-serif;
+	display: block;
+	padding-top: 11px;
+	padding-bottom: 9px;
+	text-indent: 23px;
+
+}
+#accordion .ui-accordion-content {
+	/*border: 1px solid #e6e6e6;*/
+	border: none;
+	border-top: none;
+	border-left: none;
+	padding: 9px 20px 20px;
+	background: #dedbd3;
+	border: 1px solid #e25d33;
+	width: 100%;
+	margin-left: 0px;
+	-webkit-box-sizing: border-box; /* Safari */
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	box-sizing: border-box;
+	margin-top: -5px;
+}
+#accordion .ui-accordion-content p{
+	margin-top: 2px;
+	line-height: 17px;
+	color: #545451;
+	font-style: italic;
+}
+#accordion h5.ui-state-active a {
+	background-position: left top;
+	background: #dedbd3;
+	color: #e25d33;
+	border: 1px solid #e25d33;
+
+}
+#accordion h5 a{outline: none !important;}
+#accordion h5 a:hover {
+	text-decoration: none !important;
+	background: #dedbd3;
+	color: #e25d33;
+	border: 1px solid #e25d33;
+
+}
+#accordion .ui-accordion-content a:hover {
+	text-decoration: underline;
+	color: #e47e6b;
+}
+#accordion .ui-accordion-content p {
+	padding-top: 8px;
+	padding-bottom: 1px;
+	padding-left: 0px;
+	color: #787878;
+}
+
+h5 {
+	width: 100%;
+	/*border: 1px solid #e6e6e6;*/
+	width: 100%;
+}
+h5.ui-state-active {
+	background: #f9f9f9 !important;
+	/*border: 1px solid #e6e6e6;*/
+}

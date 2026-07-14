@@ -1,0 +1,18 @@
+
+.camera_wrap .camera_pag .camera_pag_ul li > span, 
+.circle,
+.list2 li a:after { behavior:url(js/PIE.htc); }
+
+#form .invalid .error-message, 
+#form .empty .empty-message { display: block; }
+
+h2 {font-weight: bold;}
+
+#form .error-message, 
+#form .empty-message { display: none; }
+
+.copy > span {margin-bottom: 1px;}
+
+#form ._placeholder {padding-top: 8px;}
+
+.tmDatepicker {width: 175px;}

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+     <title>Lestatech</title>
+     <meta charset="utf-8">
+     <meta name = "format-detection" content = "telephone=no" />
+     <link rel="icon" href="images/FAV 1.png" type="image/x-icon">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/stuck.css">
+     <link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css">
+     <link rel="stylesheet" href="css/sForm.css">
+     <script src="js/jquery-1.11.1.min.js"></script>
+     <script src="js/jquery-migrate-1.2.1.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+     <script src="js/jquery.ui.totop.js"></script>
+     <script src="js/jquery.equalheights.js"></script>
+	 <script src="js/script.js"></script>
+     <script src="js/superfish.js"></script>
+     <script src="js/jquery.mobilemenu.js"></script>
+     <script src="js/sForm.js"></script>
+     <script src="js/tmStickUp.js"></script>
+     <script src="js/jquery.fancybox-1.3.4.js"></script>
+     <script>       
+       $(document).ready(function(){
+          $("a.various").fancybox();
+       }) 
+     </script>
+     <script src="js/sForm.js"></script>
+     <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." loading="lazy" decoding="async" />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+   		<script src="js/html5shiv.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+     </head>
+     <body>
+<!--============================== Header =================================-->
+<header>
+    <div class="header_bg"></div>
+    <div class="header_bg-img"></div>
+	<div class="Lestatech" style="background:#000; 	width:42px; height:42px;  margin-bottom: 100px; position:fixed; z-index:99;">
+		<a href="../index.html"><img src="images/prev_button.png "/ loading="lazy" decoding="async"></a>
+	
+	</div>
+    <div class="container">
+        <h1><a href="index.html"><img src="../img/logo_2.png" alt="Brand Logo" loading="lazy" decoding="async"></a></h1>
+        <div class="social">
+            <ul>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+        <div class="menu-sep"></div>
+        <div class="search">
+            <form id="search" action="search.php" method="GET" accept-charset="utf-8">
+                <label>
+                   <input type="text" name="s" value="" onBlur="if(this.value == '') { this.value=''}" onFocus="if (this.value == '') {this.value=''}" />
+                   <a onClick="document.getElementById('search').submit()"><i class="fa fa-search"></i></a>                        
+                </label>
+            </form>
+        </div>
+    </div>
+    <div id="stuck_container">
+        <div class="menu_bg"></div>
+        <div class="container menu">
+            <ul class="sf-menu">
+                <li class="current sf-first">
+                    <div class="sf-menu_effect_wrapper">
+                        <div class="sf-menu_effect"></div>
+                    </div>
+                    <a href="index.html">About</a>
+                </li>
+                <li>
+                    <div class="sf-menu_effect_wrapper">
+                        <div class="sf-menu_effect"></div>
+                    </div>
+                    <a href="index-1.html">Motivators</a>
+                </li>
+                <li>
+                    <div class="sf-menu_effect_wrapper">
+                        <div class="sf-menu_effect"></div>
+                    </div>
+                    <a href="index-2.html">Products</a>                   
+                    <ul>
+                        <li><a href="#">Vestibulum iaculis</a></li>
+                        <li><a href="#">Fusce euismod conuat</a>
+                            <ul>
+                                <li><a href="#">Pellentesque sed</a></li>
+                                <li><a href="#">Aliquam congue ferm</a></li>
+                                <li><a href="#">Mauris accum</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Pellentesque</a>
+                   </ul>
+                </li>
+                <li>
+                    <div class="sf-menu_effect_wrapper">
+                        <div class="sf-menu_effect"></div>
+                    </div>
+                    <a href="index-3.html">FAQ</a> 
+                </li>
+                <li>
+                    <div class="sf-menu_effect_wrapper">
+                        <div class="sf-menu_effect"></div>
+                    </div>
+                    <a href="index-4.html">Contacts</a>
+                </li>
+                <li>
+                    <div class="sf-menu_effect_wrapper">
+                        <div class="sf-menu_effect"></div>
+                    </div>
+                    <a href="index-5.html">Blog</a>
+                </li>
+            </ul>
+            <ul class="login-menu">
+                <li><a href="#">login</a></li>
+                <li><a href="#">help</a></li>
+                <li><a href="#">newsletter signup</a></li>
+            </ul>
+        </div>        
+    </div>
+</header>
+
+<!--======= Content ================================-->
+
+
+<!--======= Big Info =======-->
+<div class="container">
+    <div class="left-big-info">
+        <h3>This is a new, unique<br>day. So don’t live it like<br>an old one</h3>
+        <div class="btn_wrapper">
+            <a href="#" class="btn">
+                <div class="btn_slide_wrapper">
+                    <div class="btn_main">read more</div>
+                    <div class="btn_slide"><div>read more</div></div>
+                </div>
+            </a>
+        </div>        
+    </div>
+</div>
+<div class="center-big-info">
+    <div class="container">
+        <h3>Fresh perspective</h3>
+        <p class="center-big-info_sub-title">“Give your life some new energy.”</p>
+        <p>Hilary Jameson, a philosopher</p>
+        <p class="center-big-info_text">You have the opportunity today to learn, to grow, to achieve and to experience new things. To do so, you must exercise the courage to let go of some old, comfortable, predictable things.</p>
+    </div>
+</div>
+<div class="right-big-info">
+    <div class="container">
+        <div class="right-big-info_wrapper">
+            <h3>Time is neither your servant nor your<br>oppressor. It is your workplace</h3>
+            <div class="btn_wrapper">
+                <a href="#" class="btn">
+                    <div class="btn_slide_wrapper">
+                        <div class="btn_main">read more</div>
+                        <div class="btn_slide"><div>read more</div></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--======= Info Blocks =======-->
+<div class="content info-blocks">
+    <div class="container">
+        <h3>Words to inspire</h3>
+        <p class="sub_title">Monthly Motivator Archive</p>
+        <div class="info-blocks_blocks">
+            <div class="row">
+                <div class="grid_4 info-blocks_block">
+                    <div class="box">
+                        <div class="maxheight">
+                            <h4><a href="#">Epsum factorial</a></h4>
+                            <p>Lorem ipsum dolor sit amet, contuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mum sociis natoque penatibus et magnis dis parturient...
+                                <a href="#" class="link">
+                                    <span class="link_text">Read More</span>
+                                    <span class="link_arrow">>></span>
+                                </a>
+                            </p>
+                            <div class="info-blocks_social">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                </ul>
+                            </div>                            
+                        </div>
+                    </div>
+                </div> 
+                <div class="grid_4 info-blocks_block">
+                    <div class="box">
+                        <div class="maxheight">
+                            <h4><a href="#">non deposit</a></h4>
+                            <p>Lorem ipsum dolor sit amet, contuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mum sociis natoque penatibus et magnis dis parturient...
+                                <a href="#" class="link">
+                                    <span class="link_text">Read More</span>
+                                    <span class="link_arrow">>></span>
+                                </a>
+                            </p>
+                            <div class="info-blocks_social">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                </ul>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_4 info-blocks_block">
+                    <div class="box">
+                        <div class="maxheight">
+                            <h4><a href="#">quid pro quo</a></h4>
+                            <p>Lorem ipsum dolor sit amet, contuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mum sociis natoque penatibus et magnis dis parturient...
+                                <a href="#" class="link">
+                                    <span class="link_text">Read More</span>
+                                    <span class="link_arrow">>></span>
+                                </a>
+                            </p>
+                            <div class="info-blocks_social">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                </ul>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_4 info-blocks_block">
+                    <div class="box">
+                        <div class="maxheight">
+                            <h4><a href="#">Olypian quarrels</a></h4>
+                            <p>Lorem ipsum dolor sit amet, contuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mum sociis natoque penatibus et magnis dis parturient...
+                                <a href="#" class="link">
+                                    <span class="link_text">Read More</span>
+                                    <span class="link_arrow">>></span>
+                                </a>
+                            </p>
+                            <div class="info-blocks_social">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                </ul>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_4 info-blocks_block">
+                    <div class="box">
+                        <div class="maxheight">
+                            <h4><a href="#">gorilla congolium</a></h4>
+                            <p>Lorem ipsum dolor sit amet, contuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mum sociis natoque penatibus et magnis dis parturient...
+                                <a href="#" class="link">
+                                    <span class="link_text">Read More</span>
+                                    <span class="link_arrow">>></span>
+                                </a>
+                            </p>
+                            <div class="info-blocks_social">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                </ul>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>              
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--======= Video Row =======-->
+<div class="content video-row">
+    <h3>Inspiring videos</h3>
+    <div class="video-row_wrapper">
+        <ul>
+            <li>
+                <a href="http://www.youtube.com/embed/2kodXWejuy0?rel=0" class="various iframe">
+                    <div class="video-hover"><i class="fa fa-play-circle"></i></div>
+                    <img src="images/a-8.jpg" alt="" loading="lazy" decoding="async">
+                </a>
+            </li>
+            <li>
+                <a href="http://www.youtube.com/embed/2kodXWejuy0?rel=0" class="various iframe">
+                    <div class="video-hover"><i class="fa fa-play-circle"></i></div>
+                    <img src="images/a-1.jpg" alt="" loading="lazy" decoding="async">
+                </a>
+            </li>
+            <li>
+                <a href="http://www.youtube.com/embed/2kodXWejuy0?rel=0" class="various iframe">
+                    <div class="video-hover"><i class="fa fa-play-circle"></i></div>
+                    <img src="images/a-3.jpg" alt="" loading="lazy" decoding="async">
+                </a>
+            </li>
+            <li>
+                <a href="http://www.youtube.com/embed/2kodXWejuy0?rel=0" class="various iframe">
+                    <div class="video-hover"><i class="fa fa-play-circle"></i></div>
+                    <img src="images/a-7.jpg" alt="" loading="lazy" decoding="async">
+                </a>
+            </li>
+            <li>
+                <a href="http://www.youtube.com/embed/2kodXWejuy0?rel=0" class="various iframe">
+                    <div class="video-hover"><i class="fa fa-play-circle"></i></div>
+                    <img src="images/a-5.jpg" alt="" loading="lazy" decoding="async">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--======= Subscribe =======-->
+<div class="content subscribe">
+    <div class="container">
+        <h3>Join our Mailing List</h3>
+        <p>Sign up for our e-mail newsletter to receive regular updates and promotions about The Daily Motivator</p>
+        <div class="s-form">
+            <form id="form1">
+                <div class="success">Your subscribe request has been sent!</div>
+                <fieldset>
+                    <div>
+                        <label class="email">
+                            <input type="email" value="Enter your email address">
+                            <span class="error">*This is not a valid email address.</span>
+                        </label> 
+                    </div>
+                    <div>
+                        <div class="btn_wrapper">
+                            <a href="#" class="btn" data-type="submit">
+                                <div class="btn_slide_wrapper">
+                                    <div class="btn_main">sign me up!</div>
+                                    <div class="btn_slide"><div>sign me up!</div></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!--======= Footer =================================-->
+
+<footer>
+    <div class="info-col">
+        <div class="container">
+            <div class="row">
+                <div class="grid_3">
+                    <ul>
+                        <li><h4>About us</h4></li>
+                        <li class="current"><a href="index.html">About</a></li>
+                        <li><a href="index-1.html">Motivators</a></li>
+                        <li><a href="index-2.html">Products</a></li>
+                        <li><a href="index-3.html">FAQ</a></li>
+                        <li><a href="index-4.html">Contacts</a></li>
+                        <li><a href="index-5.html">Blog</a></li>                        
+                    </ul>
+                </div>
+                <div class="grid_4 preffix_1">
+                    <ul>
+                        <li><h4>Find more</h4></li>
+                        <li><a href="#">Print this page</a></li>
+                        <li><a href="#">YouTube Channel</a></li>
+                        <li><a href="#">Formatted for iPhone</a></li>
+                        <li><a href="#">Formatted for other mobile devices</a></li>
+                        <li><a href="#">Special Features</a></li>
+                        <li><a href="#">Make a donation</a></li>                        
+                    </ul>
+                </div>
+                <div class="grid_3 preffix_1">
+                    <h4>Get it touch</h4>
+                    <p>8901 Marmora Road</p>
+                    <p>Glasgow, DO4 89GR.</p>
+                    <p><span>Freephone:</span>+1 800 559 6580</p>
+                    <p><span>Telephone:</span>+1 959 603 6035</p>
+                    <p><span>FAX:</span>+ 1 504 889 9898</p>
+                    <p class="mail">E-mail: <a href="#">@lestatech.asia</a></p>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <div class="pr-policy">
+        <span>Lestatech</span>
+        &copy;
+        <span id="copyright-year"> </span> 
+        <a href="index-6.html"> Privacy Policy</a>
+    </div>          
+    <!--{%FOOTER_LINK} -->
+</footer>
+
+<!--======= To Top Button =================================-->
+<a href="#" id="toTop">
+    <i class="fa fa-arrow-circle-up"></i>
+</a>
+<script type="text/javascript">
+ var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-7078796-5']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();</script>
+</body>  
+</html>

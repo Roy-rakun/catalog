@@ -1,0 +1,14 @@
+body { min-width: 1170px;}
+.class { behavior:url(js/PIE.htc); position:absolute;}
+
+#contact-form label input,
+#contact-form label textarea,
+.btn { behavior:url(js/PIE.htc); position:relative;}
+#contact-form .success-message { behavior:url(js/PIE.htc);}
+
+#contact-form ._placeholder {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=99);}
+
+#contact-form ._placeholder.focused {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);}
+
+.btn {box-shadow: 0 0 0px 1px #000;}
+.btn:hover {box-shadow: 0 0 0px 3px #000;}

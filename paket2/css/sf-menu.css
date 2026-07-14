@@ -1,0 +1,152 @@
+/*SF-Menu*/
+
+.sf-menu{
+	display: inline-block;
+	float: left;
+	font: 18px/18px 'Asap';
+	color: #fff;
+	text-transform: uppercase;
+}
+.select-menu{	
+	font: 15px/18px 'Asap';
+	color: #402628;
+}
+.sf-menu a:hover{
+	color: #fff;
+}
+.sf-menu ul{
+	display: none;
+}
+.sf-menu > li{
+	float: left;
+	position: relative;
+}
+.sf-menu .sf-first > a{
+	padding-left: 42px;
+}
+.sf-menu > li > a{
+	display: block;
+	padding: 19px 24px 17px;
+	margin: 0;
+	letter-spacing: 0.8px;
+}
+.sf-menu > li > a:hover{
+	text-decoration: none;
+}
+.sf-menu a{	
+	position: relative;
+	z-index: 9;
+}
+.sf-menu_effect_wrapper{
+	position: absolute;
+	z-index: 8;
+	top: -3px;
+	left: 0;
+	right: 0;
+	bottom: -3px;
+	overflow: hidden;
+}
+.sf-menu_effect{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #f21f51;
+	opacity: 0;
+	filter: alpha(opacity=00);
+	left: 0;
+	bottom: 57px;
+	-webkit-transition: 0.4s;
+	-o-transition: 0.4s;
+	transition: 0.4s;
+}
+.sf-menu > li:hover .sf-menu_effect,
+.sf-menu > .current .sf-menu_effect,
+.sf-menu > .sfHover .sf-menu_effect{
+	opacity: 1;
+	filter: alpha(opacity=99);
+	bottom: 0;
+	-webkit-transition: opacity 0.1s, bottom 0.4s 0.1s;
+	-moz-transition: opacity 0.1s, bottom 0.4s 0.1s;
+	-ms-transition: opacity 0.1s, bottom 0.4s 0.1s;
+	-o-transition: opacity 0.1s, bottom 0.4s 0.1s;
+	transition: opacity 0.1s, bottom 0.4s 0.1s;
+}
+.isStuck .sf-menu > li:hover .sf-menu_effect,
+.isStuck .sf-menu > .current .sf-menu_effect,
+.isStuck .sf-menu > .sfHover .sf-menu_effect{
+	opacity: 1;
+	filter: alpha(opacity=99);
+	bottom: 0;
+	-webkit-transition: opacity 0.1s, bottom 0.4s;
+	-moz-transition: opacity 0.1s, bottom 0.4s;
+	-ms-transition: opacity 0.1s, bottom 0.4s;
+	-o-transition: opacity 0.1s, bottom 0.4s;
+	transition: opacity 0.1s, bottom 0.4s;
+}
+.sf-menu > li:hover > ul .sf-menu_effect{
+	left: -100%;
+}
+
+
+.sf-menu .sub-menu{
+	z-index: 99;
+	width: 175px;
+	position: absolute;
+	top: 54px;
+	-webkit-box-sizing:  border-box;
+	-moz-box-sizing:  border-box;
+	box-sizing:  border-box;
+	background: #595647;
+	color: #fff;
+	font: 12px/12px 'Arial';
+	text-transform: none;
+}
+.sf-menu .sub-menu{
+	padding: 18px 0;	
+}
+.sf-menu .sub-menu .sfHover{
+	color: #ffc586;
+}
+.sf-menu .sub-menu a{
+	display: block;
+	text-align: center;
+	margin: 12px 0;
+}
+.sf-menu .sub-menu a:hover{
+	color: #ffc586;
+}
+
+.sf-menu .sub-menu .sfHover{
+	position: relative;
+}
+.sf-menu .sub-menu .sub-menu{
+	z-index: 89;
+	position: absolute;
+	top: -22px;
+	left: 101%;
+	background: #fff;
+	color: #000;
+}
+
+@media only screen and (max-width: 1200px){
+}
+@media only screen and (max-width: 979px){
+	.sf-menu > li > a{
+		padding: 19px 10px 17px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.sf-menu{
+		display: none;
+		margin-right: 0px;
+	}
+	.select-menu{
+		width: 100%;
+		padding-left: 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		line-height: 20px;
+		position: relative;
+		z-index: 99;
+	}
+}

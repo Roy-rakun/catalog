@@ -1,0 +1,23 @@
+
+.class { behavior:url(js/PIE.htc); position:absolute;}
+
+body {
+	min-width: 940px;
+}
+
+
+
+.gallery .thumbs_img > div > .lbHover{
+ 	background: transparent;
+}
+.gallery .thumbs_img  .lbHover div{
+	display: none;
+}
+.gallery .thumbs_img div:hover .lbHover div{
+	display: block;
+}
+
+.list li a:hover .list-ident i{
+	display: none;
+}
+

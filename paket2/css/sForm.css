@@ -1,0 +1,144 @@
+/* Forms
+---------------------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600);
+
+#form1 {
+	position:relative;
+}
+#form1 > fieldset > div{
+	display: inline-block;
+}
+	#form1 input {
+		 border:none;
+		 background:#f2e0cc;
+		 color: #8d8379;
+		 font: 14px/16px 'Open Sans';
+		 padding: 15px 5px 15px 22px;
+		 -webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+		 box-sizing: border-box;
+		 width:100%;
+		 height: 46px;
+		 outline:none;		 
+		 box-shadow:none;
+		 margin: 0;
+	}
+	#form1 textarea {
+		 border:1px solid #000;
+		 border-radius:10px;
+		 background:#CCC;
+		 color:#333;
+		 -moz-border-radius:10px;
+		 -webkit-border-radius:10px;
+		 font-size:12px;
+		 line-height:1.2307em;
+		 padding:5px 0 5px 10px;
+		 width:300px;
+		 height:100px;
+		 overflow:auto;
+		 outline:none;
+	}
+	#form1 label {
+		display:inline-block;
+		min-height:46px;
+		width: 508px;
+		margin-right: 5px;
+	}
+	#form1 .error {
+		position: absolute;	
+		display:block;
+		overflow:hidden;
+		height:0px;
+		font-size:10px;
+		color:#F00;
+		
+		-webkit-transition: all 0.3s ease-out; 
+		-moz-transition: all 0.3s ease-out; 
+		-o-transition: all 0.3s ease-out; 
+		transition: all 0.3s ease-out; 
+	}
+	#form1 .success {
+		width: 510px;
+		height: 46px;
+		border: none;
+		background: #FFFFFF;
+		color: #344046;
+		text-transform: uppercase;
+		text-align: center;
+		padding-top: 12px;
+		position: absolute;
+		z-index: 10;
+		left: 0;
+		top: 0;
+	}
+	.btns a{
+		display:inline-block;
+		font: 14px/14px 'Open Sans';
+		padding:15px 0 15px;
+		background:#000;
+		text-decoration:none;
+		text-transform: uppercase;
+		color:#fff;
+		width: 100%;
+		text-align: center;
+	}
+	.btns a:hover {
+		background:#333;
+		text-decoration:none;
+	}
+
+#form1 label.invalid .error {
+	/*display: block;*/
+	height:19px;
+}
+/* Form defaults */
+input, select, textarea { 
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1em;
+	vertical-align:middle;
+	font-weight:normal;
+	}
+
+
+@media only screen and (max-width: 979px){
+	#form1 label {
+		width: 446px;
+	}
+}
+@media only screen and (max-width: 767px){
+	#form1{
+		margin-left: 0 !important;
+	}
+	#form1 .btns, #form1 label{
+		margin-top: 10px;
+	}
+	#form1 .error{
+		top: -6px;
+	}
+	#form1 .success{
+		width: 100%;
+		left: 0;
+		height: 60px;
+	}
+	#form1 label {
+		width: 100%;
+	}
+	#form1 > fieldset{
+		text-align: center;
+	}
+	#form1 > fieldset > div {
+		display: inline-block;
+		width: 100%;
+	}
+	#form1 > fieldset > div .btn_wrapper{
+		text-align: center;
+		padding-top: 5px;
+	}
+	#form1 .success{
+		height: 46px;
+	}
+}
+
+/*==========================================*/

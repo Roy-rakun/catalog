@@ -1,0 +1,19 @@
+
+.circle,
+.camera_loader,
+#subscribe-form input,
+#subscribe-form .success,
+.camera_wrap .camera_pag .camera_pag_ul li > span,
+#toTop { behavior:url(js/PIE.htc); }
+
+#toTop { 
+	-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=80)';
+}
+
+
+
+/* Contact Form Processing Box
+========================================================*/
+
+#contact-form .contact-form-loader { display: none;}
+#contact-form.processing .contact-form-loader {display: block;}

@@ -1,0 +1,79 @@
+/****Subscribe Form****/
+#subscribe-form{
+	position: relative;
+	display: block;
+	margin-top: 10px;
+}
+#subscribe-form input {
+		 background:none;
+		 color:#3b4141;
+		 font:12px/19px 'Lato', Arial, sans-serif;
+		 /*line-height:1.2307em;*/
+		 padding: 10px 10px 10px 12px;
+		 /*width:100%;*/
+		 width: 100%;
+		 outline:none;
+		 box-shadow:none;
+		 margin: 0;
+		 height: 41px;
+		 margin-bottom: 11px;
+		 box-sizing: border-box;
+		-moz-box-sizing: border-box; /*Firefox 1-3*/
+		-webkit-box-sizing: border-box; /* Safari */
+		border-radius: 0;
+		border: 1px solid #000;
+	}
+	#subscribe-form label {
+		display:inline-block;
+		min-height: 53px;
+		position: relative;
+		width: 100%;
+		padding-right: 96px;
+		-webkit-box-sizing: border-box; /* Safari */
+		-moz-box-sizing: border-box; /*Firefox 1-3*/
+		box-sizing: border-box;
+}
+	#subscribe-form {
+		position: relative;
+	}
+	#subscribe-form .error {
+		display:block;
+		overflow:hidden;
+		height:0px;
+		font-size:10px;
+		color:#000;
+		left: 0px;
+		bottom: -8px;
+		position: absolute;
+		
+		-webkit-transition: all 0.3s ease-out; 
+		-moz-transition: all 0.3s ease-out; 
+		-o-transition: all 0.3s ease-out; 
+		transition: all 0.3s ease-out;
+	}
+	#subscribe-form label.invalid .error {
+		height:19px;
+	}
+	#subscribe-form .success {
+		width:100%;
+		/*height: 46px;
+		background:#fff;*/
+		color:#000;
+		position:absolute;
+		z-index:10;
+		font-size:10px;
+		left:0px;
+		bottom: -8px;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box; /*Firefox 1-3*/
+		-webkit-box-sizing: border-box; /* Safari */
+	}
+
+	#subscribe-form  .btns {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	#subscribe-form  .btns a {
+		cursor: pointer;
+}

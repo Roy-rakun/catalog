@@ -1,0 +1,357 @@
+/*
+* Styles for tm3DCircleCarousel plugin
+*/
+.splashHolder .splash li a .icon_zoom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5) url(../img/zoom_icon.png) center no-repeat;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.splashHolder .splash li a .info_block {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 78px;
+  font-size: 14px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: rgba(23, 21, 19, 0.76);
+}
+.splashHolder .splash li a .info_block .cont {
+  font: normal 14px/23px 'Segoe UI', Tahoma, Arial, Helvetica, Sans-Serif;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  color: #ffffff;
+  border-radius: 0;
+}
+.splashHolder .splash li a .info_block .cont .pad {
+  position: relative;
+  display: inline-block;
+  padding-top: 16px;
+}
+.splashHolder .splash li a .info_block .cont .leftBlock {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 392px;
+  height: 100%;
+  background: transparent;
+  padding-top: 28px;
+  padding-left: 29px;
+}
+.splashHolder .splash li a .info_block .cont .leftBlock:after {
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 34px;
+  background: url(../img/devider.jpg) no-repeat 0 0;
+  top: 22px;
+  right: -1px;
+  pointer-events: none;
+  content: "";
+}
+.info2_block {
+  position: absolute;
+  width: 464px;
+  height: 464px;
+  background: transparent;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.info2_block .link_2 {
+  width: 71px !important;
+  height: 78px !important;
+  top: auto!important;
+  left: auto!important;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  text-align: center;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.info2_block .link_2:before {
+  position: absolute;
+  display: block;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  font: normal 22px/82px FontAwesome;
+  background: transparent;
+  top: 0;
+  left: 0;
+  content: "\f129";
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.info2_block .link_2:hover:before {
+  color: #9ab414;
+  -webkit-transform: scale(1.8, );
+  -ms-transform: scale(1.8, );
+  transform: scale(1.8, );
+}
+.link_2 {
+  width: 71px !important;
+  height: 78px !important;
+  top: auto!important;
+  left: auto!important;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  text-align: center;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.link_2:before {
+  position: absolute;
+  display: block;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  font: normal 22px/82px FontAwesome;
+  background: transparent;
+  top: 0;
+  left: 0;
+  content: "\f129";
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.link_2:hover:before {
+  color: #9ab414;
+  -webkit-transform: scale(1.8, );
+  -ms-transform: scale(1.8, );
+  transform: scale(1.8, );
+}
+.splashHolder .splash li.scale100 a:hover .icon_zoom {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.splashHolder .splash li.scale100 a .info_block {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.splashHolder .splash li.scale100 .link_2 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.splashHolder {
+  position: relative;
+  /* controls and info */
+}
+.splashHolder .splash {
+  list-style: none;
+  position: absolute;
+  height: 500px;
+  top: 0;
+  left: 50%;
+  padding: 0px 0px 0px 0px;
+}
+.splashHolder .splash li {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  margin-left: -390px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -moz-perspective: 500px;
+  -webkit-perspective: 500px;
+  -ms-perspective: 500px;
+  perspective: 500px;
+  /*.transform-origin(center center);*/
+  /*.preserve-3d();       */
+  pointer-events: none;
+}
+.splashHolder .splash li a {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  pointer-events: auto;
+}
+.splashHolder .splash li a img {
+  position: relative;
+}
+.splashHolder .splash li.scale100 {
+  -webkit-transform: rotateY(0deg) scale(1, 1);
+  -ms-transform: rotateY(0deg) scale(1, 1);
+  transform: rotateY(0deg) scale(1, 1);
+  z-index: 100 !important;
+}
+.splashHolder .splash li.scale90 {
+  z-index: 90 !important;
+}
+.splashHolder .splash li.scale90 > a {
+  -webkit-transform: rotateY(-15deg) scale(0.9, 0.9);
+  -ms-transform: rotateY(-15deg) scale(0.9, 0.9);
+  transform: rotateY(-15deg) scale(0.9, 0.9);
+}
+.splashHolder .splash li.scale90.rightSide > a {
+  -webkit-transform: rotateY(15deg) scale(0.9, 0.9);
+  -ms-transform: rotateY(15deg) scale(0.9, 0.9);
+  transform: rotateY(15deg) scale(0.9, 0.9);
+}
+.splashHolder .splash li.scale90.rightSide > .info2_block {
+  -webkit-transform: rotateY(15deg) scale(0.9, 0.9);
+  -ms-transform: rotateY(15deg) scale(0.9, 0.9);
+  transform: rotateY(15deg) scale(0.9, 0.9);
+}
+.splashHolder .splash li.scale80 > a {
+  -webkit-transform: rotateY(15deg) scale(0.9, 0.9);
+  -ms-transform: rotateY(15deg) scale(0.9, 0.9);
+  transform: rotateY(15deg) scale(0.9, 0.9);
+}
+.splashHolder .splash li.scale80.rightSide > a {
+  -webkit-transform: rotateY(-15deg) scale(0.9, 0.9);
+  -ms-transform: rotateY(-15deg) scale(0.9, 0.9);
+  transform: rotateY(-15deg) scale(0.9, 0.9);
+}
+.splashHolder .splash li.scale80.rightSide > .info2_block {
+  -webkit-transform: rotateY(-15deg) scale(0.9, 0.9);
+  -ms-transform: rotateY(-15deg) scale(0.9, 0.9);
+  transform: rotateY(-15deg) scale(0.9, 0.9);
+}
+.splashHolder .splash li.scale70 > a {
+  -webkit-transform: rotateY(-15deg) scale(0.9, 0.9);
+  -ms-transform: rotateY(-15deg) scale(0.9, 0.9);
+  transform: rotateY(-15deg) scale(0.9, 0.9);
+}
+.splashHolder .splash li.scale70.rightSide > a {
+  -webkit-transform: rotateY(15deg) scale(0.9, 0.9);
+  -ms-transform: rotateY(15deg) scale(0.9, 0.9);
+  transform: rotateY(15deg) scale(0.9, 0.9);
+}
+.splashHolder .splash li.scale70.rightSide > .info2_block {
+  -webkit-transform: rotateY(-15deg) scale(0.9, 0.9);
+  -ms-transform: rotateY(-15deg) scale(0.9, 0.9);
+  transform: rotateY(-15deg) scale(0.9, 0.9);
+}
+.splashHolder .splash li.scale60 > a {
+  -webkit-transform: rotateY(15deg) scale(0.9, 0.9);
+  -ms-transform: rotateY(15deg) scale(0.9, 0.9);
+  transform: rotateY(15deg) scale(0.9, 0.9);
+}
+.splashHolder .splash li.scale60.rightSide > a {
+  -webkit-transform: rotateY(-15deg) scale(0.9, 0.9);
+  -ms-transform: rotateY(-15deg) scale(0.9, 0.9);
+  transform: rotateY(-15deg) scale(0.9, 0.9);
+}
+.splashHolder .splash li.scale60.rightSide > .info2_block {
+  -webkit-transform: rotateY(-15deg) scale(0.9, 0.9);
+  -ms-transform: rotateY(-15deg) scale(0.9, 0.9);
+  transform: rotateY(-15deg) scale(0.9, 0.9);
+}
+.splashHolder .splash li.scale50 > a {
+  -webkit-transform: rotateY(-15deg) scale(0.9, 0.9);
+  -ms-transform: rotateY(-15deg) scale(0.9, 0.9);
+  transform: rotateY(-15deg) scale(0.9, 0.9);
+}
+.splashHolder .splash li.scale50.rightSide > a {
+  -webkit-transform: rotateY(15deg) scale(0.9, 0.9);
+  -ms-transform: rotateY(15deg) scale(0.9, 0.9);
+  transform: rotateY(15deg) scale(0.9, 0.9);
+}
+.splashHolder .splash li.scale50.rightSide > .info2_block {
+  -webkit-transform: rotateY(-15deg) scale(0.9, 0.9);
+  -ms-transform: rotateY(-15deg) scale(0.9, 0.9);
+  transform: rotateY(-15deg) scale(0.9, 0.9);
+}
+.splashHolder .prevButton,
+.splashHolder .nextButton {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  top: 210px;
+  width: 42px;
+  height: 42px;
+  background-color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 100;
+  -webkit-transform: rotateY(0);
+  -ms-transform: rotateY(0);
+  transform: rotateY(0);
+}
+.splashHolder .prevButton > span,
+.splashHolder .nextButton > span {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.splashHolder .prevButton:hover,
+.splashHolder .nextButton:hover {
+  /*background-color: @pink;*/
+}
+.splashHolder .prevButton:hover > span,
+.splashHolder .nextButton:hover > span {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.splashHolder .prevButton {
+  margin-left: -325px;
+  background: url(../img/prev_button.png) 0 0 no-repeat;
+}
+.splashHolder .prevButton > span {
+  background: url(../img/prev_button.png) 0 bottom no-repeat;
+}
+.splashHolder .nextButton {
+  margin-left: 285px;
+  background: url(../img/next_button.png) 0 0 no-repeat;
+}
+.splashHolder .nextButton > span {
+  background: url(../img/next_button.png) 0 bottom no-repeat;
+}
+/*Core variables and mixins*/
+/* 3d mixins */
+.flipX {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+.flipY {
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipV;
+  -ms-filter: "FlipV";
+}
+.flipXY {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipV;
+  -ms-filter: "FlipV";
+}
+/* end 3d mixins */

@@ -1,0 +1,242 @@
+
+nav>.sf-menu {
+	z-index: 990;
+	text-align: left;
+	position: relative;
+	float: right;
+}
+
+nav { 
+	margin: 0;
+	position:relative;
+	padding: 0;
+	float: right;
+	width: 100%;
+}
+
+.bottom_menu {
+	position: relative;
+	overflow: hidden;
+	margin: 21px 0 17px;
+	float: right;
+}
+
+.bottom_menu ul li a {
+	font-size: 14px;
+	line-height: 26px;
+	color: #fff;
+	font-weight: 900;
+	padding: 0;
+}
+
+.bottom_menu ul li + li {margin-left: 17px;}
+
+.bottom_menu ul li a:hover,
+.bottom_menu li.current>a {
+	color: #e71f30; 
+}
+
+.sf-menu ul { 
+	position:absolute; 
+	top:-999px; 
+	display:none;
+}
+
+.sf-menu li { float:left;position:relative; }
+.sf-menu>li {
+	display: block;
+	position: relative;
+	float: left;
+	text-transform: uppercase;
+}
+
+.sf-menu>li+li {
+	margin-left: 1px;
+}
+
+.sf-menu>li>ul>li {
+  float: none;
+  position: static;
+}
+
+.sf-menu>li>a{
+	display: block;
+	text-align: center;
+	position: relative;
+	color: #fff;
+	font: 700 17px/130px 'Roboto', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 4px 18px 0 19px;
+}
+
+.sf-menu>li>a span {
+	display:block;
+	line-height: 87px;
+	margin-top: -87px;
+
+}
+
+.sf-menu>li>a:hover,
+.sf-menu>li.current>a {
+	position: relative;
+	text-decoration: none;
+	background: #2c2c2c;
+}
+
+.sf-menu>li>a.sf-with-ul:after {
+	position: absolute;
+	content: '';
+	left: 46%;
+	top: 83px;
+	width: 8px;
+	background: url(../images/arrow_menu.png) 0 0 no-repeat;
+	height: 5px;
+	pointer-events: none;
+	z-index: 999;
+	display: block;
+}
+
+.sf-menu>li>ul>li>a.sf-with-ul:after {
+	content: '';
+	position: absolute;
+	display: none;
+	width: 7px;
+	height: 6px;
+	right: 20px;
+	bottom: 11px;
+	pointer-events: none;
+	z-index: 999;
+}
+
+.sf-with-ul:after {background-position: 0 bottom;}
+
+/*================================>> 2 Level <<========================================*/
+
+.sf-menu li ul {
+	position: absolute;
+	z-index: 999;
+	top: 134px;
+	left: 0;
+	padding: 9px 0 13px;
+	width: 228px;
+	background: url(../images/menu_bg.png) 0 0 repeat;
+}
+
+.sf-menu li ul li{
+	position: relative;
+	text-align: left;
+	float: none !important;
+	cursor: default;
+}
+
+.sf-menu li ul li+li {}
+
+.sf-menu li ul li a{
+	position: relative;
+	text-transform: none;
+	z-index: 999;
+	display: block;
+	color: #ffffff;
+	font: normal 13px/31px 'Roboto';
+	padding: 0 20px;
+	text-decoration: none;
+}
+
+.sf-menu>li>ul>li>a.sf-with-ul:after {
+	position: absolute;
+	content: '';
+	right: 16px;
+	width: 5px;
+	background: url(../images/arrow_menu1.png) 0 0px no-repeat;
+	height: 8px;
+	top: 14px;
+	pointer-events: none;
+	z-index: 999;
+	display: block;
+}
+
+.sf-menu li li a:hover {  
+	text-decoration: none;
+	background: #e71f30;
+}
+
+/*================================>> 3 Level <<========================================*/
+
+.sf-menu li ul li ul{
+	position: absolute;
+	left: 229px;
+	top: 0px;
+	background: url(../images/menu_bg.png) 0 0 repeat;
+	padding: 0;
+}
+
+
+.sf-menu li ul li ul li a {
+	color: #fff;
+	padding-right: 0;
+}
+
+.sf-menu li ul li a:hover {
+	font-weight: normal;
+	text-decoration: none;
+}
+
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+
+@media only screen and (max-width: 1199px) {
+
+}
+
+@media only screen and (max-width: 995px) {
+
+	.sf-menu > li > a {
+		font-size: 16px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.bottom_menu ul li a {font-size: 13px;}
+}
+
+@media only screen and (max-width: 767px) {
+
+	.menu_block {
+		float: none !important;
+		padding: 20px 10px 25px !important;
+		clear: both;
+		min-height: 0px;
+  		border: none;
+  		width: auto;
+	}
+
+  	header nav{
+  		border: none !important;
+		float:none !important;
+		font:12px/15px Arial, Helvetica, sans-serif;
+		text-transform:uppercase;
+		color:#927c67;
+		margin: 0 auto;	
+	}	
+
+  	header nav ul {border: none;}
+
+	.sf-menu {display:none !important; float: none;}
+	
+	.bottom_menu {display: none;}
+	
+	#mm1 {display: none!important;}
+
+	#mm0{
+		font: 500 12px/15px 'Roboto', Helvetica, sans-serif;
+		background: #fff;
+		padding: 1px 0;
+		color:#000;
+		width:100%;
+		margin: 0 auto 25px;
+		float: none;
+        outline: none;
+		border:1px solid #d41525;
+	}
+
+}

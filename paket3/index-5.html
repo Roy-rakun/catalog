@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contacts</title>
+<meta charset="utf-8">
+<meta name = "format-detection" content = "telephone=no" />
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="css/contact-form.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/grid.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.2.1.js"></script>
+<script src="js/TMForm.js"></script>
+<script src="js/modal.js"></script>
+
+<!--[if (gt IE 9)|!(IE)]><!-->
+<script src="js/wow/wow.js"></script>
+<script>
+  $(document).ready(function () {       
+    if ($('html').hasClass('desktop')) {
+      new WOW().init();
+    }   
+  });
+</script>
+
+<!--[if lt IE 8]>
+ <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." loading="lazy" decoding="async" />
+   </a>
+</div>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+<![endif]-->
+</head>
+
+<body>
+  <div class="main">
+<!--==============================
+              header
+=================================-->
+<header class="">  
+   <!--==============================
+              Stuck menu
+  =================================-->
+ 
+  <section id="stuck_container">
+    <div class="container">
+      <div class="row">
+        <div class="grid_10">
+          <h1>
+          <a href="index.html">
+            <img src="../img/logo_2.png" alt="Logo alt" loading="lazy" decoding="async">
+          </a>
+        </h1>
+          <div class="navigation">
+            <nav>
+              <ul class="sf-menu">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="index-1.html">About</a>
+                 <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a>
+                      <ul>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Dolor sit amet</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacts</a></li>
+                 </ul>
+               </li>
+               <li><a href="index-2.html">Services</a></li>
+               <li><a href="index-3.html">Projects</a></li>
+               <li><a href="index-4.html">Blog</a></li>
+               <li class="current"><a href="index-5.html">Contacts</a></li>
+             </ul>
+            </nav>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+</header>  
+<!--=====================
+          Content
+======================-->
+<section id="content">
+  <div class="container">
+    <div class="row">
+      <div class="grid_8">
+        <h3>stay in touch</h3>
+        <div class="map">
+          <figure class="">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31876.106437298095!2d104.74545180856623!3d-2.9549663459911066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75e8fc27a3e3%3A0x3039d80b220d0c0!2sPalembang%2C+Kota+Palembang%2C+Sumatera+Selatan!5e0!3m2!1sid!2sid!4v1525950875173" style="border:0" loading="lazy"></iframe>
+          </figure>
+          <address class="address1">
+            <dl>
+              <dt class="text1 color2">
+                  8901 Marmora Road,<br>Glasgow, D04 89GR.
+              </dt>
+              <dd><span>Freephone:</span>0822-9848-3838</dd>
+              <dd><span>Telephone:</span>0811-339-4626</dd>
+              <dd><span>FAX:</span>+1 504 889 9898</dd>
+              <dd>E-mail: <a href="#" class=" color1">mail@demolink.org</a></dd>
+            </dl>
+          </address>
+          <address class="address1">
+            <dl>
+              <dt class="text1 color2">
+                  9863 - 9867 Mill Road,<br>Cambridge, MG09 99HT
+              </dt>
+              <dd><span>Freephone:</span>0822-9848-3838</dd>
+              <dd><span>Telephone:</span>0811-339-4626</dd>
+              <dd><span>FAX:</span>+1 504 889 9898</dd>
+              <dd>E-mail: <a href="#" class=" color1">@lestatech.asia</a></dd>
+            </dl>
+          </address>
+        </div>
+      </div>
+      <div class="grid_4">
+        <h3>contact form</h3>
+              <form id="contact-form">
+                  <div class="contact-form-loader"></div>
+                  <fieldset>
+                    <label class="name">
+                      <input type="text" name="name" placeholder="Name:" value="" data-constraints="@Required @JustLetters"  />
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*This is not a valid name.</span>
+                    </label>
+                   
+                    <label class="email">
+                      <input type="text" name="email" placeholder="E-mail:" value="" data-constraints="@Required @Email" />
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*This is not a valid email.</span>
+                    </label>
+                    <label class="phone">
+                      <input type="text" name="phone" placeholder="Phone:" value="" data-constraints="@Required @JustNumbers" />
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*This is not a valid phone.</span>
+                    </label>
+                   
+                    <label class="message">
+                      <textarea name="message" placeholder="Message*:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                      <span class="empty-message">*This field is required.</span>
+                      <span class="error-message">*The message is too short.</span>
+                    </label>
+                    <div>
+                      <a href="#" class="btn" data-type="reset">Clear </a>
+                      <a href="#" class="btn" data-type="submit">Send </a>
+                    </div>
+                  </fieldset> 
+                  <div class="modal fade response-message">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                          You message has been sent! We will be in touch soon.
+                        </div>      
+                      </div>
+                    </div>
+                  </div>
+                </form>   
+      </div>
+    </div>
+  </div>
+</section>
+<!--==============================
+              footer
+=================================-->
+<footer id="footer" class="wow fadeInUpBig">
+  <div class="container">
+    <div class="row">
+      <div class="grid_12"> 
+        <div class="copyright">
+          <div class="row">
+          <div class="grid_8 fright">
+            <div class="socials">
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-google-plus"></a>
+              <a href="#" class="fa fa-rss"></a>
+              <a href="#" class="fa fa-linkedin"></a>
+            </div>
+          </div>
+          <div class="grid_4">
+          Lestatech  &copy; <span id="copyright-year"></span> &bull; <a href="index-6.html">Privacy Policy</a> 
+          </div>
+          </div>
+      </div>
+    </div>
+  </div> 
+  </div>   
+</footer>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
+

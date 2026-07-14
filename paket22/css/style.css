@@ -1,0 +1,896 @@
+/*css*/
+@import "../css/grid.css";
+@import "../css/superfish.css";
+@import "../css/touchTouch.css";
+@import "../css/form.css";
+@import "../css/camera.css";
+@import "../css/animation.css";
+
+@import url(//fonts.googleapis.com/css?family=Istok+Web:400,700,400italic,700italic);
+
+input::-ms-clear {
+   display: none;
+}
+
+html, body { }
+
+a[href^="tel:"] {
+	color: inherit;
+	text-decoration:none;
+}
+* {
+	-webkit-text-size-adjust: none;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.fleft {float:left;}
+.fright {float:right;}
+.clear {clear:both; width:100%; font-size:0; line-height:0;}
+.wrapper, .wrapper-extra, .extra-wrap{
+	position: relative;
+	overflow:hidden;
+	width: 100%; 
+}
+.wrapper-after:after{
+	display:block;
+	visibility:hidden;
+	clear:both;
+	height:0;
+	content:".";
+}
+.dis-block{display: block;}
+.dis-inblock{display: inline-block;}
+
+.txt_left{text-align: left;}
+.txt_right{text-align: right;}
+.txt_cntr{text-align: center;}
+.txt_ital{font-style: italic;}
+.txt_line_through{text-decoration: line-through;}
+
+.lh22{line-height: 22px;}
+.lh24{line-height: 24px;}
+.lh26{line-height: 26px;}
+
+.fz12{
+	font-size: 12px;
+	display: inline-block;
+	margin-top: 2px;
+}
+.fz14{font-size: 14px;}
+
+
+.marg-left-0{margin-left:0 !important;}	
+.marg-right-0{margin-right:0 !important;}
+.marg-left-right-0{ margin-right:0 !important;margin-left:0 !important;}
+.last-mbot{margin-bottom:0 !important;}	
+.last-pbot{padding-bottom: 0 !important;}
+.last-mpbot{margin-bottom:0 !important;padding-bottom:0 !important;}
+
+.marRight1{margin-right: 35px;}
+
+.padTop1{padding-top: 20px;}
+
+.padLeft1{padding-left: 40px;}
+
+
+.padBot1{padding-bottom: 60px;}
+.padBot2{padding-bottom: 41px;}
+
+.mar1{margin: -1px 10px 0; display: inline-block !important; color: #808080 !important;}
+.mar2{margin: 0 10px;}
+
+.marTop0{margin-top: 0px;}
+.marTop1{margin-top: 26px !important;}
+.marTop2{margin-top: 27px !important;}
+.marTop3{margin-top: 31px !important;}
+.marTop4{margin-top: 22px !important;}
+.marTop5{margin-top: 42px !important;}
+.marTop6{margin-top: 80px !important;}
+.marTop7{margin-top: 32px !important;margin-bottom: -17px;}
+.marTop8{margin-top: 31px !important;}
+.marTop9{margin-top: 20px !important;}
+.marTop10{margin-top: 0px !important;}
+.marTop11{margin-top: 81px !important;}
+.marTop12{margin-top: 7px !important;}
+.marTop13{margin-top: 100px !important;}
+.marTop14{margin-top: 32px !important;}
+.marTop15{margin-top: 32px; display: inline-block;}
+
+
+
+.pos_rel{
+	position: relative;
+	z-index: 10;
+}
+
+.marBot1{margin-bottom: 8px; display: inline-block;}
+
+
+.quote_1{
+	text-align: center;
+	max-width: 660px;
+	display: inline-block;
+	margin-top: 34px;
+}
+.hline2{
+	padding-bottom: 15px;
+	border-bottom: 1px solid #373737;
+	position: relative;
+}
+
+.box, .box2, .box3{overflow: hidden;}
+.bold{font-weight: bold;}
+.fw400{font-weight: 400;}
+.fw600{font-weight: 600;}
+
+
+.color1{color: #b5141d;}
+.color2{color: #ccc;}
+
+
+
+
+
+
+
+/* Global properties ======================================================== */
+html, body { margin:0; padding:0; height:100%;}
+
+body {
+	min-width:300px;
+	background: #fff;
+	color:#7b7b7b;
+	font:13px/21px "Istok Web", Arial, Helvetica, sans-serif ;
+	background: url(../images/footer_bg_pattern.png) #242a2c;
+}
+.fs_14{font-size: 14px;}
+#back-top {
+  position: fixed;
+  bottom: 40px;
+  left: 51%;
+  z-index: 1000;
+  display: none;
+  margin-left: 620px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background: url(../images/up-arrow.png) 50% 0% no-repeat;
+  color: #c5c5c5;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 1000px;
+  -webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+
+
+}
+#back-top i{line-height: 73px; font-size: 22px; display: none}
+#back-top:hover {
+	color: #3498db;
+  background: url(../images/up-arrow.png) 50% 100% no-repeat;
+  
+}
+.main{
+	padding:0 0 0 0;
+	width:100%;
+	height: auto; 
+	background: #fff; 
+}
+.div-content{
+	margin:0 auto;
+	padding-top: 0px;
+	padding-bottom: 75px;
+	width:100%;
+	overflow: hidden;
+}
+.div-content.content_page{padding-bottom: 112px;}
+.txt_col1{
+	position: relative;
+	display: inline-block;
+	width: 64px;
+}
+/***********************************************************************/
+/*===============================>H-logo-properties=========================*/
+h1{
+	position: relative;
+	margin:0;
+	margin-top: 0px;
+	float: left;
+}
+h1 img{max-width: inherit;}
+
+
+h2 {
+	font:30px/30px 'Open Sans', Arial, sans-serif;
+	color:#222;
+	margin-top: 92px;
+}
+.h2_footer{
+	font:bold 24px/30px 'Open Sans', Arial, sans-serif;
+	color:#ccc;
+	margin-top: 32px;
+}
+h2.v2{margin-top: 69px;}
+h2.v3{
+	margin-top: 32px;
+	color: #ccc;
+}
+h2.v4{margin-top: 82px;}
+
+h3 {
+	font:bold 18px/24px 'Istok Web', Arial, sans-serif;
+	color:#b5141d;
+	margin-top: 22px;
+	text-transform: uppercase;
+}
+h4 {
+	font:300 20px/25px 'Istok Web', Arial, sans-serif;
+	color:#363f45;
+	margin-top: 39px;
+	text-transform: uppercase;
+}
+
+
+#search-results h4{color: #000; padding-bottom: 12px;}
+span.search{color: #f85353 !important;}
+#search-results h4 a:hover{color: #f85353;}
+h5{ 
+	margin-top: 10px;
+	margin-bottom: 0;
+	color:#333333;
+	text-transform: uppercase;
+	font:14px/22px 'Istok Web', Arial, sans-serif;
+}
+
+.num1{
+	font:300 35px/52px 'Istok Web', Arial, sans-serif;
+	color:#fff; 
+	margin-top: 21px;
+	text-transform: uppercase;
+	float: left;
+	margin-right: 28px;
+	background: #f85353;
+	border-radius: 500px;
+	width: 52px;
+	height: 52px;
+	text-align: center;
+}
+
+.num2{
+	font: 300 50px/75px 'Istok Web', Arial, sans-serif;
+	color:#fff; 
+	margin-top: 31px;
+	text-transform: uppercase;
+	width: 81px;
+	height: 81px;
+	background: #3e454c;
+	margin-top: 36px;
+	border-radius: 500px;
+	text-align: center;
+}
+
+
+.txt1 {
+	font:24px/30px 'Istok Web', Arial, sans-serif;
+	color:#fff;
+	margin-top: 2px;
+	text-transform: uppercase;
+}
+.txt2 {
+	font:72px/72px 'Istok Web', Arial, sans-serif;
+	color:#fff;
+	margin-top: 0px;
+	text-transform: uppercase;
+	letter-spacing: -2px;
+}
+.txt3 {
+	font:24px/30px 'Istok Web', Arial, sans-serif;
+	color:#fff;
+	margin-top: -12px;
+}
+.txt4 {
+	font:bold 30px/30px 'Istok Web', Arial, sans-serif;
+	color:#fff;
+	margin-top: 0;
+	text-transform: uppercase;
+}
+.txt5 {
+	font:18px/26px Arial, sans-serif;
+	color:#fff;
+	margin-top: 22px;
+}
+.txt6 {
+	font:14px/24px 'Istok Web', Arial, sans-serif;
+	color:#cccccc;
+	margin-top: 18px;
+}
+.txt7 {
+	font:18px/21px 'Istok Web', Arial, sans-serif;
+	color:#7b7b7b;
+	margin-top: 20px;
+}
+.txt8 {
+	font:40px/40px 'Istok Web', Arial, sans-serif;
+	color:#fff;
+	margin-top: 20px;
+	text-shadow:1px 1px #251f23;
+	text-transform: uppercase;
+}
+.txt9 {
+	font:18px/24px 'Istok Web', Arial, sans-serif;
+	color:#fff;
+	margin-top: 21px;
+}
+.txt10 {
+	font:12px/18px 'Istok Web', Arial, sans-serif;
+	color:#cccccc;
+	margin-top: 34px;
+}
+.txt11 {
+	font:13px/22px 'Istok Web', Arial, sans-serif;
+	color:#cccccc;
+	margin-top: 34px;
+}
+.txt12 {
+	font:14px/24px 'Istok Web', Arial, sans-serif;
+	color:#7b7b7b;
+	margin-top: 15px;
+}
+
+
+.footer_txt_section{
+	font:13px/22px 'Istok Web', Arial, sans-serif;
+	color:#cccccc;
+	padding-left: 23px;
+	background: url(../images/footer_icon1.png) 0 2px no-repeat;
+	margin-top: 33px;
+	margin-bottom: -15px;
+}
+.footer_txt_section.v2{background: url(../images/footer_icon2.png) 0 2px no-repeat;}
+.footer_txt_section.v3{background: url(../images/footer_icon3.png) 0 2px no-repeat;}
+
+p{margin-top: 38px;}
+img{ margin-bottom: 0px;max-width:100%; height:auto;}
+
+.img_rounded{border-radius: 10px;}
+.img1{margin-top: 67px;}
+.img2{margin-top: 48px;}
+.img3{
+	margin-top: 33px;
+	float: left;
+	margin-right: 30px;
+}
+.img4{margin-top: 34px;}
+
+a { 
+	text-decoration:none; 
+	cursor:pointer;
+	color: inherit;
+}
+
+.num_link{
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	background: #111010;
+	text-align: center;
+	font:12px/40px "Istok Web", Arial, Helvetica, sans-serif;
+	color: #8d8584;
+	border-radius: 500px;
+	margin-top: 30px;
+}
+.num_link:hover{
+	color: #fff;
+	background: #eb6654;
+}
+
+a.link1{}
+a.link1:hover{color: #b5141d;}
+
+a.link2{}
+a.link2:hover{color: #fff;}
+
+a.link3{text-decoration: underline;}
+a.link3:hover{color: #b5141d; text-decoration: underline;}
+
+a.link4{}
+a.link4:hover{color: #000;}
+
+.logo_link:hover img{opacity: 0.5;}
+
+
+
+.comment_txt{margin-top: 4px;margin-bottom: -20PX;}
+.comment_txt i{
+	color: #bbbaba;
+	font-size: 15px;
+	margin-top: 5px;
+	margin-right: 5px;
+
+}
+
+
+a:hover{
+	color: #b5141d;
+	text-decoration:none;
+}
+a{
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+}
+
+
+.letter_section{
+	position: relative;
+	margin-top: 35px;
+	width: 52px;
+	height: 52px;
+	font:30px/56px 'Istok Web', Arial, sans-serif;
+	color:#fff; 
+	float: left;
+	background: #222222;
+	text-align: center;
+	margin-right: 30px;
+	border-radius: 5px;
+}
+
+.img_section{
+	width: 100%;
+	position: relative;
+	-webkit-box-sizing: border-box; /* Safari */
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	box-sizing: border-box;
+	border: 1px solid #d5d5d6;
+	padding: 29px 29px 38px;
+	margin-top: 35px;
+}
+
+
+.date_section{
+	display: inline-block;
+	position: relative;
+	width: 131px;
+	height: 131px;
+	background-color: #313131;
+	text-align: center;
+	margin-top: 52px;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 500px;
+}
+.day{font:bold 60px/60px 'Istok Web', Arial, sans-serif; margin-top: 26px; display: block;}
+.month{font:bold 18px/18px 'Istok Web', Arial, sans-serif; margin-top: -6px; display: block;margin-left: -17px;}
+
+.date_section:hover{background: #a30001;}
+
+/************Header************/
+header{
+	position: relative;
+	z-index: 9;
+	padding: 0;
+	z-index: 11;
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+header.content_header{
+	margin-bottom: -28px;
+}
+header.content_header:before {
+	position: absolute;
+	display: inline-block;
+	content: '';
+	width: 100%;
+	height: 4px;
+	left: 0;
+	bottom: -4px;
+	background: url(../images/header_border.png);
+}
+
+
+.bot_line{
+	display: inline-block;
+	margin-top: 2px;	
+	margin-bottom: 42px;
+	width: 100%;
+	height: 1px;
+	background: #f2f2f2;	
+}
+	
+/************Content***********/
+
+
+
+blockquote{
+	margin-top: 28px;
+	position: relative;
+	background: url(../images/quote_sign.png) 0 5px no-repeat;
+	padding-left: 43px;
+	padding-top: 0;
+	padding-right: 0;
+	margin-bottom: 33px;
+}
+
+
+.gall_txt_section{
+		background: #fff;
+	-webkit-box-sizing: border-box; /* Safari */
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	box-sizing: border-box;
+	
+		padding: 10px 10px 33px 19px;
+	border: 1px solid #c8c8c8;
+	border-top: none;
+}
+
+.img_col1{
+	float: left;
+	width: 300px;
+}
+
+
+.box-1{
+	position: relative;
+	margin: 0;
+	padding: 46px 0 31px;
+	margin-top: -154px;
+	background: url(../images/bg_1.png);
+	z-index: 11;
+}
+.box-2{
+	margin: 0;
+	padding: 113px 0 116px;
+	background: url(../images/bg_pic1.jpg) 50% 0 no-repeat #392f2e;
+}
+.box-2.v2{padding: 33px 0 112px;}
+.box-3{
+	margin: 0;
+	padding: 42px 0 65px;
+	background: url(../images/bg_pic2.jpg) 50% 0 no-repeat #392f2e;
+}
+
+
+
+.img_box{
+	background: #fff;
+	-webkit-box-sizing: border-box; /* Safari */
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	box-sizing: border-box;
+	padding: 13px 13px 8px;
+	margin-top: 47px;
+	line-height: 21px;
+}
+
+
+/* ============================= lists ====================== */
+.listWithMarker {
+  margin: 0;
+  margin-top: 28px;
+}
+.listWithMarker li {
+  display: block;
+  padding-left: 18px;
+  background: url(../images/list_marker.png) 0px 6px no-repeat;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom: 8px;
+}
+.listWithMarker li.no_arr{background: none;}
+.listWithMarker li.last{border: none;}
+.listWithMarker li a {
+  color: #7b7b7b;
+  text-decoration: none;
+  font: 12px/20px Arial, sans-serif;
+}
+.listWithMarker li a:hover, .listWithMarker li.current a{
+  color: #ba242c;
+}
+
+
+.list2{margin-top: 35px;}
+.list2 li {
+  display: block;
+  padding-bottom: 3px;
+  background: url(../images/list_marker2.png) 0px 6px no-repeat;
+  padding-left: 9px;
+}
+.list2 li a {
+  color: #bababa;
+  text-decoration: none;
+  font: 12px/20px "Istok Web", Arial, sans-serif;
+}
+.list2 li a:hover, .list2 li.current a {color: #a7161e;}
+
+/* ============================= end lists ====================== */
+.comments_btn{
+	padding-left: 19px;
+	background: url(../images/comment_icon.png) 0 2px no-repeat;
+	color: #6b6b6b;
+}
+
+
+.more_btn_header{
+	display: inline-block;
+	margin-top: 45px;
+	padding: 19px 26px;
+	color: #fff;
+	text-decoration:none; 
+	font: 18px/20px "Istok Web", Arial, sans-serif;
+	border-radius: 10px;
+	border: 2px solid #fff;
+}
+.more_btn_header:hover{
+	color: #fff;
+	background: #b5141d;
+}
+
+
+
+.more_btn{
+	display: inline-block;
+	margin-top: 27px;
+	padding: 7px 18px;
+	background: #b5141d;
+	color: #fff;
+	text-decoration:none; 
+	font: 16px/20px "Istok Web", Arial, sans-serif;
+	border-radius: 6px;
+}
+.more_btn.v2{
+	margin-top: 53px;
+	padding: 15px 25px;
+	font: 14px/20px "Istok Web", Arial, sans-serif;
+}
+.more_btn.v3{
+	margin-top: 22px;
+	padding: 7px 23px;
+	font: 12px/20px "Istok Web", Arial, sans-serif;
+	text-transform: uppercase;
+}
+.more_btn.v4{background: #1f1e1e; padding: 7px 21px; margin-top: 23px;}
+.more_btn.v4:hover{background: #b5141d;}
+.more_btn:hover{
+	color: #fff;
+	background: #1f1e1e;
+}
+
+
+
+.more_btn2{
+	display: inline-block;
+	margin-top: 37px;
+	color: #fff;
+	font: bold 13px/20px "Istok Web", Arial, sans-serif;
+	text-transform: uppercase;
+}
+.more_btn2:hover{
+	color: #ca080d;
+}
+
+figure{display: block; margin-top: 7px;}
+figure.img_inner {
+	display: block;
+	overflow: hidden;
+	height: auto;
+	line-height: 0;
+	margin: 0;
+	margin-right: 0;
+	margin-top: 34px;
+}
+figure iframe {
+	width: 100%;
+	height: 411px;
+}
+address{
+	display: block;
+	margin-top: 20px;
+	font-style: normal;
+	margin-bottom: 0;
+}
+address dl dt{
+	display: inline-block;
+	margin-bottom: 24px;
+}
+address dd span{
+	position: relative;
+	display: inline-block;
+	width: 100px;
+}
+
+
+
+/*********************************start magnifier2*************************************/
+.magnifier2 {
+    position:relative;
+    /* display:block; */
+    display: inline-block;
+}
+.magnifier2 img{
+}
+.zoom{
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-box-sizing: border-box; /* Safari */
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+
+  	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	background: url(../images/magnifier2.png) 50% 50% no-repeat;
+	-webkit-transition: all 0.6s ease;
+  	-moz-transition: all 0.6s ease;
+  	-o-transition: all 0.6s ease;
+  	transition: all 0.6s ease;
+}
+a.magnifier2:hover .zoom{
+	opacity: 1;
+}
+a.magnifier2 .zoom{
+	opacity: 0;
+}
+/*********************************end magnifier2*************************************/
+/************Footer************/
+footer{ 
+	display: block; 
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 0px;
+}
+.footer_priv{
+	padding: 46px 0 50px;
+}
+
+p.txt_priv{
+	color:#cbcbcb;
+	font:bold 18px/20px "Istok Web", Arial, sans-serif;
+	margin-top: 67px;
+}
+
+
+/*----------- start social icons ----------------*/
+
+.soc_icons {
+  position: relative;
+  display: inline-block;
+  margin-top: 48px;
+  white-space: nowrap;
+  text-align: left;
+  margin-left: -36px;
+}
+.soc_icons > li {
+  position: relative;
+  display: inline-block;
+  margin-left: 35px;
+}
+.soc_icons > li > a {
+  position: relative;
+  color: #fff;
+  line-height: 1em;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+	display: inline-block;
+	text-align: center;
+  /*font: normal normal 46px/56px 'FontAwesome';*/
+  padding: 0 5px;
+}
+.soc_icons i{font: normal normal 46px/56px 'FontAwesome';}
+.soc_icons > li > a:hover {
+  color: #b5141d;
+  text-decoration: none;
+  background: none;
+}
+
+
+
+/*----------- end social icons ----------------*/
+
+
+
+.indent1{margin-top: 75px;}
+
+
+
+
+.priv_section1{float: left;}
+.priv_section2{float: right;}
+
+
+
+
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+@media only screen and (max-width: 1399px) {
+	
+}
+
+
+@media only screen and (max-width: 1199px) {
+	.div-content{width:100%;}
+	address dd span{width: 74px;}
+
+	figure a{width: 100%;}
+	.txt1{font: 17px/26px 'Istok Web', Arial, sans-serif;}
+	.txt2{font: 52px/72px 'Istok Web', Arial, sans-serif;}
+
+	.caption {top: 7%;}
+	.caption span.slider_txt1{font:40px/40px "Istok Web", Arial, Helvetica, sans-serif ;}
+	.caption span.slider_txt2{font:25px/25px "Istok Web", Arial, Helvetica, sans-serif ;}
+	.txt9 br{display: none;}
+	.box-2 {padding: 73px 0 76px;}
+
+
+
+}
+
+
+@media only screen and (max-width: 979px) {
+	.address figure iframe {
+		max-width:100%;
+		width: 100%;
+	}
+	
+	address dd, footer .grid_3.alpha p{font-size: 12px;	}
+	figure iframe {width: 100%;}
+	.magnifier2 {width: 100%;}
+	.box-1{margin-top: 0; padding-top: 30px;}
+	.camera_wrap .camera_pag {bottom:20px;}
+	.caption span.slider_txt1{margin-top: 20px;}
+	.caption span.slider_txt1{font:30px/30px "Istok Web", Arial, Helvetica, sans-serif ;}
+	.caption span.slider_txt2{font:15px/15px "Istok Web", Arial, Helvetica, sans-serif ;}
+
+	.soc_icons i{font: normal normal 26px/36px 'FontAwesome';}
+	.soc_icons > li {margin-left: 20px;}
+	.soc_icons {margin-left: -20px; margin-top: 17px;}
+
+
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+	img{width: 100%;}
+	img.no_resize{width: auto;}
+	.box{overflow: visible;}
+	.mobile_txt_cntr{text-align: center;}
+	figure.img_inner {margin-bottom: 10px;}
+
+	.txt2 {margin-bottom: 10px;}
+	.txt8{font-size: 26px;}
+	.txt9{font-size: 15px;}
+	.box-2{background: #392f2e;}
+	.img3{margin-bottom: 10px;}
+	.box-3 {padding: 22px 0 45px;}
+
+
+
+
+
+}
+
+
+@media only screen and (max-width: 479px) {
+	.txt2 {font: 42px/72px 'Istok Web', Arial, sans-serif; margin-bottom: 10px;}
+	/*.caption_bg{display: none;}*/
+	/*h1 img{width: 100%;}*/
+
+}
+@media only screen and (max-width: 320px) {
+
+
+}

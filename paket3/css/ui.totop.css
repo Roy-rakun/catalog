@@ -1,0 +1,30 @@
+/*
+|--------------------------------------------------------------------------
+| UItoTop jQuery Plugin 1.1
+| http://www.mattvarone.com/web-design/uitotop-jquery-plugin/
+|--------------------------------------------------------------------------
+*/
+#toTop {
+  display: none;
+  text-decoration: none;
+  position: fixed;
+  bottom: 40px;
+  left: 51%;
+  margin-left: 640px;
+  overflow: hidden;
+  border: none;
+  color: #fff;
+  width: 41px;
+  height: 41px;
+  background: #f8565d url(../images/totop.png) 0 0 no-repeat;
+  border-radius: 500px;
+  z-index: 20;
+  text-indent: -999px;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+#toTop:hover {
+  outline: none;
+  background-color: #333;
+}
+/*Core variables and mixins*/

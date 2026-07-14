@@ -1,0 +1,18 @@
+
+.class { behavior:url(js/PIE.htc); position:absolute;}
+
+body{
+	min-width: 940px;
+}
+
+.third-in-one_third{
+	padding-bottom: 24px;
+}
+
+
+.gallery .gallery_block .thumbs_img div > .lbHover div:after{
+	display: none;
+}
+.gallery .gallery_block .thumbs_img div:hover > .lbHover div:after{
+	display: block;
+}

@@ -1,0 +1,278 @@
+/**************************
+*
+*	GENERAL
+*
+**************************/
+
+.slider_wrapper {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+}
+
+
+.camera_target_content {
+	overflow: visible !important;
+}
+
+.camera_wrap {
+	display: none;
+	position: relative;
+	overflow: visible !important;
+	z-index: 0;
+	margin: 0!important;
+}
+
+.camera_wrap img {
+	max-width: 10000px;
+}
+
+.camera_fakehover {
+	height: 100%;
+	min-height: 60px;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+
+.camera_src {
+	display: none;
+}
+
+.camera_caption {
+
+}
+
+.camera_caption:after {
+	content: "";
+	position: absolute;
+	height: 234px;
+	width: 119px;
+	right: -119px;
+	top: 0;
+}
+
+.cameraCont, .cameraContents {
+	height: 100%;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+
+.cameraSlide {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+.cameraContent {
+	bottom: 0;
+	display: none;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+.camera_target {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	text-align: left;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+.camera_overlayer {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+.camera_target_content {
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+}
+
+.camera_target_content .camera_link {
+    background: url(../images/blank.gif);
+	display: block;
+	height: 100%;
+	text-decoration: none;
+}
+
+.camera_loader {
+    background: #fff url(../images/camera-loader.gif) no-repeat center;
+	background: rgba(255, 255, 255, 0.6) url(../images/camera-loader.gif) no-repeat center;
+	border: 1px solid #ffffff;
+	border-radius: 18px;
+	height: 36px;
+	left: 48%;
+	overflow: hidden;
+	position: absolute;
+	margin: 0;
+	top: 40%;
+	width: 36px;
+	z-index: 3;
+}
+
+.camera_nav_cont {
+	height: 65px;
+	overflow: hidden;
+	position: absolute;
+	right: 9px;
+	top: 15px;
+	width: 120px;
+	z-index: 4;
+}
+
+.camerarelative {
+	overflow: hidden;
+	position: relative;
+}
+
+.camera_commands > .camera_stop {
+	display: none;	
+}
+
+.camera_clear {
+	display: block;
+	clear: both;
+}
+
+.showIt {
+	display: none;
+}
+
+.camera_clear {
+	clear: both;
+	display: block;
+	height: 1px;
+	margin: -1px 0 25px;
+	position: relative;
+}
+
+.camera_pag {
+	width: 83px;
+    height: 40px;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    left: 48%;
+}
+.camera_wrap .camera_pag .camera_pag_ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.camera_wrap .camera_pag .camera_pag_ul li {
+	cursor: pointer;
+	display: inline-block;
+	height: 17px;
+	padding: 0;
+	position: relative;
+	text-align: left;
+	text-indent: -9999px;
+	width: 17px;
+}
+
+.camera_wrap .camera_pag .camera_pag_ul li+li {margin-left: 8px;}
+
+.camera_wrap .camera_pag .camera_pag_ul li > span {
+	background: #fff;
+	height: 17px;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 17px;
+
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+}
+
+.camera_wrap .camera_pag .camera_pag_ul li.cameracurrent > span, 
+.camera_wrap .camera_pag .camera_pag_ul li:hover > span {
+	background: #2c2c2c;
+}
+
+.camera_pag_ul li img {
+	display: none;
+	position: absolute;
+}
+
+.camera_pag_ul .thumb_arrow {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid;
+	top: 0;
+	left: 50%;
+	margin-left: -4px;
+	position: absolute;
+}
+
+/* =====================Responsive=====================*/
+
+@media only screen and (max-width: 1399px) {
+	
+	.camera_caption {
+		margin-top: 135px;
+		width: 609px;
+		padding-left: 90px;
+	}
+	.camera_pag {left: 47%;}
+
+}
+
+@media only screen and (max-width: 1199px) {
+	
+
+
+}
+
+@media only screen and (max-width: 995px) {
+	
+
+}
+
+
+@media only screen and (max-width: 767px) {
+		
+	.camera_pag {left: 46%;}
+}
+
+@media only screen and (max-width: 480px) {
+	
+	.camera_pag {left: 42%;}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+	.camera_pag {left: 39%;}
+}

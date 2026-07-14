@@ -1,0 +1,27 @@
+@import url(//fonts.googleapis.com/css?family=Ubuntu:300);
+@import url(//fonts.googleapis.com/css?family=Ubuntu:400);
+
+
+.num2, .soc_icons > li > a, .more_btn, .camera_wrap .camera_pag .camera_pag_ul li span{ behavior:url(js/PIE.htc); position:relative;}
+#back-top { behavior:url(js/PIE.htc);}
+
+a.magnifier2:hover .zoom{
+	display: block;
+}
+a.magnifier2 .zoom, .bottom_p{
+	display: none;
+}
+a.magnifier3:hover .zoom2{
+	display: block;
+}
+a.magnifier3 .zoom2{
+	display: none;
+}
+body{
+	min-width: 1243px;
+}
+
+#contact-form input,
+#contact-form textarea {
+	overflow: hidden;
+}
